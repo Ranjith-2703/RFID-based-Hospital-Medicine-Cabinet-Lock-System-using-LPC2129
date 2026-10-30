@@ -215,34 +215,4 @@ The LCD operates in 8-bit parallel mode.
 
 ## Important Implementation Notes
 
-- This project is an educational embedded-systems prototype.
-- Verify all LPC2129 pin configurations against the actual hardware connections.
-- Ensure the EM-18 RFID reader and LPC2129 UART logic voltage levels are compatible.
-- The RFID IDs must be entered correctly in the source code.
-- The current source code does not implement RFID checksum validation.
-- The second sample RFID ID must be corrected because it contains a non-hexadecimal character (`S`).
-- The current motor control uses fixed-duration delays. Limit switches or position sensors are recommended for reliable cabinet positioning.
-- The L293D requires a suitable motor supply and an enabled motor-driver input.
-- Use a separate suitable motor power supply with a common ground.
-- Verify the active-low LED and buzzer connections before hardware testing.
-- This prototype should not be treated as a certified medical storage security system without further safety and security validation.
-
-## About
-
-**Project:** RFID-Based Hospital Medicine Cabinet Lock System
-
-**Microcontroller:** LPC2129 ARM7
-
-**Programming Language:** Embedded C
-
-**IDE:** Keil µVision
-
-**RFID Module:** EM-18
-
-**Motor Driver:** L293D
-
-**Display:** 16×2 LCD
-
-**Communication:** UART0
-
-**Project Type:** Embedded Systems Mini Project
+This project is an educational RFID-based hospital medicine cabinet lock prototype and should not be treated as a certified medical security system. Real hospital applications require reliable access control, secure authentication, emergency access provisions, and proper safety validation. Verify all LPC2129 pin mappings, UART connections, RFID ID validation, L293D motor-driver wiring, and active-low LED and buzzer logic against the actual schematic and source code.
